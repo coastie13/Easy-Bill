@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDIS Billing App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NDIS Billing App</h1>
+        
+        <!-- Category Dropdown -->
+        <label for="category">Select Category</label>
+        <select id="category">
+            <option value="core">Core Supports</option>
+            <option value="capacity">Capacity Building</option>
+        </select>
+        
+        <!-- Line Item Dropdown -->
+        <label for="lineitem">Select Line Item</label>
+        <select id="lineitem"></select>
+        
+        <!-- Case Notes Textarea -->
+        <label for="caseNotes">Case Notes</label>
+        <textarea id="caseNotes"></textarea>
+        
+        <!-- Generate Invoice Button -->
+        <button id="generateInvoice">Generate Invoice</button>
+        
+        <!-- Total Price Display -->
+        <h3>Total Price: <span id="totalPrice">$0</span></h3>
+    </div>
+    
+    <!-- Include the JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
